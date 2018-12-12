@@ -25,7 +25,7 @@ repo_url = repo_address + repo_ref
 container_name = "redis"
 container_tag = "latest"
 token = "wcRZhtvgLFAbly3OyCIYioZRRq9lbJIbQcqCQPMt"
-#api_endpt = "https://reg-dhc-int.app.corpintra.net/api/v1/repository/dailysanity123"
+#api_endpt = "https:/url/api/v1/repository/dailysanity123"
 
 #work_dir = "memcached"
 #build_results_file = "build_results.csv"
@@ -63,7 +63,7 @@ def push_container():
     subprocess.call(['./test3.sh'])
     print ("pushing image to repo")
     start_time = time.time()
-#    build_command = subprocess.call(['docker push reg-dhc-int.app.corpintra.net/dailysanity123/postgres:latest > /dev/null 2>&2', shell=true])
+#    build_command = subprocess.call(['docker push url/dailysanity123/postgres:latest > /dev/null 2>&2', shell=true])
     build_command = subprocess.call(['./test1.sh'])
     if build_command == 0:
       quay_cache['push_container']=1 
@@ -118,7 +118,7 @@ def pull_container():
 
 def delete_reg_image():
 
-    url='https://reg-dhc.app.corpintra.net/api/v1/repository/dailysanity123%2Fredis'
+    url='https://url/api/v1/repository/dailysanity123%2Fredis'
 #    payload = json.load(open("requests.json"))
     headers = {"Authorization": "Bearer " + token, "Content-Type": "application/json"}
 
