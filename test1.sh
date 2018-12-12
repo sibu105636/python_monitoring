@@ -1,3 +1,3 @@
 #!/bin/sh
-
-docker push reg-dhc.app.corpintra.net/dailysanity123/redis:latest 
+reg-dhc.app.corpintra.net
+docker push registry_url/dailysanity123/redis:latest 
