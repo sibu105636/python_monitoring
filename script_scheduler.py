@@ -42,7 +42,7 @@ class JsonCollector(object):
 if __name__ == '__main__':
   # Usage: json_exporter.py port endpoint
   start_http_server(9192)
-  REGISTRY.register(JsonCollector('https://git-dhc-int.app.corpintra.net/rest/api/1.0/admin/groups'))
+  REGISTRY.register(JsonCollector('https://url'))
 
   while True: 
     #time.sleep(1)
