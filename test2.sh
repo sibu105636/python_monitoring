@@ -8,4 +8,4 @@ then
 else
    echo "image not available locally, pulling it from registry"
 fi
-docker pull reg-dhc.app.corpintra.net/dailysanity123/redis:latest 
+docker pull registry_url/dailysanity123/redis:latest 
