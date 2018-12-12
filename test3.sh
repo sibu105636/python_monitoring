@@ -1,6 +1,6 @@
 #!/bin/sh
 
-a=`docker images|grep reg-dhc.app.corpintra.net/dailysanity123/redis|awk '{print $1}'`
+a=`docker images|grep registry_url/dailysanity123/redis|awk '{print $1}'`
 echo $a
 if [ ! -z "$a" ]
 then
