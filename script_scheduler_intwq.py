@@ -77,7 +77,7 @@ if __name__ == '__main__':
 #	repolist = ('centos', 'redis')
 #	i = 0
 #	for i in repolist:
-		test1 = quay_test('centos', 'reg-dhc-int.app.corpintra.net', 'F5aPTXc9FFPBuQX3MfpXJDvy7LeIVKwo8FlqNkk7', 359, 'EMEA')
+		test1 = quay_test('image_name', 'registry_yrl', 'token', 359, 'EMEA')
     		test1.quayValidation()
-		test2 = quay_test('redis', 'reg-dhc-int.adc.corpintra.net', '2DVCXO02tQoFhBNBYHwPuA329b60rk6Qf8ySu2wy', 107, 'APAC')
+		test2 = quay_test('image_name', 'registry_yrl', 'token', 107, 'APAC')
 		test2.quayValidation()
